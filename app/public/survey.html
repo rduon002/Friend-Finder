@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1 class="text-center">
+                    <img src="./image/fire_new.png" style="width: 20%; height: 20%;">Friend Finder</h1>
+                <hr>
+                <h2 class="text-center">Start Now!</h2>
+                <br>
+
+                <div class="text-center">
+                    <a href="/survey">
+                        <button type="button" class="btn btn-lg btn-primary">Survey</button>
+                    </a>
+                    <a href="/home">
+                        <button type="button" class="btn btn-lg btn-default">Return Home</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Reservation Page -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Survey</h4>
+                        </div>
+                        <div class="panel-body">
+
+                            <form role="form" lpformnum="1">
+
+                                <div class="form-group">
+                                    <label for="reserve_name">Name (Required)</label>
+                                    <input type="text" class="form-control" id="reserve_name" name="name" );>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reserve_phone">Link to photo (Required)</label>
+                                    <input type="text" class="form-control" id="reserve_phone" name="userPhoto">
+                                </div>
+
+                                <!-- Survey Questions -->
+                                <div class="input-field">
+                                    <h3>Question 1</h3>
+                                    <h5>You strive to better yourself and others.</h5>
+                                    <select id="question1">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 2</h3>
+                                    <h5>You can imagine yourself 5 Years from now.</h5>
+                                    <select id="question2">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 3</h3>
+                                    <h5>Mornings are the best.</h5>
+                                    <select id="question3">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 4</h3>
+                                    <h5>If you don't enjoy what your made to do, you find away to make it enjoyable.</h5>
+                                    <select id="question4">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 5</h3>
+                                    <h5>You prefer cats over dogs</h5>
+                                    <select id="question5">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 6</h3>
+                                    <h5>When asked for money by a stranger, you donate what you can.</h5>
+                                    <select id="question6">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 7</h3>
+                                    <h5>You are unafraid to speak out loud.</h5>
+                                    <select id="question7">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 8</h3>
+                                    <h5>If someone is doing something wrong, you wait until their finished before telling them.</h5>
+                                    <select id="question8">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 9</h3>
+                                    <h5>Food is the best.</h5>
+                                    <select id="question9">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <h3>Question 10</h3>
+                                    <h5>You like taking control of any situation.</h5>
+                                    <select id="question10">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+
+                                <!-- Survey Submit Button -->
+                                <button type="submit" class="btn btn-primary submit" id="submit-table">Submit</button>
+                            </form>
+    </body>
+
+
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/survey">API Survey Link</a> |
+                <a href="/api/friendlist">API Friend List</a>
+            </p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    </body>
+</head>
+
+</html>
